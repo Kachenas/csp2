@@ -3,14 +3,15 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	font-family: 'Spectral SC', serif;
+	font-family: 'Open Sans', sans-serif;
 	/*position: relative;*/
 }
 
 
 
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 h1,
@@ -32,15 +33,17 @@ h2{
 }
 
 .bio{
-	font-size: 14px;
+	font-size: 15px;
+	
 
 }
 
 .me{
-	height: 150px;
+	height: 200px;
 	border-radius: 50%;
 	border-style: solid;
 	border-color: white;
+	opacity:0.8;
 
 }
 
