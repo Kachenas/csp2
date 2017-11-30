@@ -30,42 +30,65 @@
 		<main>
 
 			<!-- dashboard -->
-			<section>
-				<h3> <i class="fa fa-home"></i>Dashboard</h3> 
+			<section id="mainDashboard">
+				<div class="dashColumn">
+					<h2> <i class="fa fa-home"></i>Dashboard</h2>
+				</div>
+				
 				<!-- post -->
-				<div>
-					<div><i class="fa fa-file-text-o fa-lg"></i></div>
-					<p>5</p>
-					<p>post</p>
+				<div class="dashColumn">
+					<div id="postCircle">
+						<i class="fa fa-file-text-o fa-lg"></i>
+					</div>
+
+					<div  class="inline-blocked">
+						<p>5</p>
+						<p>post</p>
+					</div>
+					
 
 				</div>
 				<!-- images -->
-				<div>
-					<div><i class="fa fa-tachometer"></i></div>
-					<p>13</p>
-					<p>images</p>
+				<div class="dashColumn">
+					<div id="postImageCircle">
+						<i class="fa fa-tachometer"></i>
+					</div>
+					<div class="inline-blocked">
+						<p>13</p>
+						<p>images</p>
+					</div>
+					
 				</div>
 			</section>
 
 			<section>
 
+				<!-- new post -->
+				<h2><i class="fa fa-plus-circle"></i>New Post</h2>
 				<form method="" action="">
-					<h2>New Post</h2>
-					<input type="text" name="postTitle" placeholder="Enter your post title" width="250"><br>
-					<input type="text" name="postContent" placeholder="Enter post content here" width="250"><br>
-					<input type="button" name="publishButton" value="Publish">
+					
+					<input id="postTitle" type="text" name="postTitle" placeholder="Enter your post title" ><br>
+					<textarea id="postContent" placeholder="Enter your content here"></textarea><br>
+					<input type="submit" name="btnPublish" class="btn btn-blue" value="Publish">
+
 				</form>
 
-				<h2>Upload Image</h2>
-				<img src="http://lorempixel.com/50/50">
-				<img src="http://lorempixel.com/50/50">
-				<img src="http://lorempixel.com/50/50">
-				<img src="http://lorempixel.com/50/50">
-				<img src="http://lorempixel.com/50/50"><br>
+				<h2><i class="fa fa-cloud-upload"></i>Upload Image</h2>
+				<div class="img-set-holder">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200"><br>
+					
+				</div>
+				
 
-				<form>
-					<input type="button" name="fileBrowse" value="Browse">
-					<input type="button" name="fileUpload" value="Upload">
+				<form method="" action="">
+					
+					<!-- <input type="file" hidden=""> -->
+					<button class="btn btn-blue" type="button"><i class="fa fa-file-image-o"></i>Browse</button>
+					<button class="btn btn-green" type="button"><i class="fa fa-cloud-upload"></i>Upload</button>
 				</form>
 
 
