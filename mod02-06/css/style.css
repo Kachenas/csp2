@@ -1,0 +1,189 @@
+/*
+*
+*General Rules
+*
+*/
+
+/*css reset*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /* to avoid overflow*/
+	font-family: 'Vollkorn SC', serif;
+
+
+
+}
+
+p{
+	color: white;
+}
+
+.wrapper {
+	width:700px;
+	margin: 0 auto; /* to center an element*/
+	background: url("../images/img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #6a3005;
+}
+
+header{
+	height:60px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	background: url("../images/img.jpg");
+
+	color: white;
+
+}
+
+footer{
+	
+	height: 70px;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	font-size: 14px;
+	background: url("../images/img.jpg");
+
+
+
+}
+
+/*
+*
+*Posts
+*
+*/
+
+#postCircle, 
+#postImageCircle{
+	height: 70px;
+	width: 70px;
+	background-color: #868585;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+}
+
+#postCircle{
+	background-color: #3f2323;
+}
+#postImageCircle{
+	background-color: #3d0000;
+}
+
+.inline-blocked{
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.dashColumn{
+	width: 32%;
+	height: 100px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+*buttons
+*
+*/
+
+.btn{
+	border: none;
+	padding: 15px 30px; /* 15 px = top to bottom 30px = left and right*/
+	font-size: 14px;
+	border-radius: 5px;	/*remove edges*/
+	color: white;
+
+}
+
+.btn-grey{
+	background-color: #c4923e;
+
+}
+
+
+
+/*
+*
+*img
+*
+*/
+
+.img-set-holder{
+	text-align: center;
+}
+
+.img-set{
+	height: 100px; /* defined to maintain aspect ratio of images*/
+	width: 100px;
+	padding: 5px; /*targets all sides*/
+	background-color: #fff;
+	border-radius: 3px;
+	margin:0 5px;
+
+}
+
+form{
+	text-align: right;
+	padding: 10px 20px 20px; /* top=10,right=20px,bottom=20 left=20*/
+} 
+
+main{
+	padding: 20px 10px 10px;
+}
+
+h2{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+/*
+*
+*Posts
+*
+*/
+
+
+
+#postTitle, #postContent{
+	width: 100%;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+#postTitle{
+	margin-bottom: 20px;
+
+}
+
+#postContent{
+	height: 100px;
+	margin-bottom: 10px;
+}
+

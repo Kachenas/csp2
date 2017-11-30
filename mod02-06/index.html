@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- useage of special character -->
+	<meta charset="utf-8">
+
+	<!-- This is a mobile application -->
+	<meta name="viewport" content="width=device-width", initial-scale="1.0", maximum-scale="1.0">
+
+	<!-- Use for INternet Exploer -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+
+
+
+	<title>DOM Activity 3</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header>
+			<h1>PhotoFlare</h1>
+		</header>
+
+		<main>
+
+			<!-- dashboard -->
+			<section id="mainDashboard">
+				<div class="dashColumn">
+					<h2 style="color:white;"> <i class="fa fa-home"></i>Dashboard</h2>
+				</div>
+				
+				<!-- post -->
+				<div class="dashColumn">
+					<div id="postCircle">
+						<i class="fa fa-file-text-o fa-lg"></i>
+					</div>
+
+					<div  class="inline-blocked">
+						<p>5</p>
+						<p>post</p>
+					</div>
+					
+
+				</div>
+				<!-- images -->
+				<div class="dashColumn">
+					<div id="postImageCircle">
+						<i class="fa fa-tachometer"></i>
+					</div>
+					<div class="inline-blocked">
+						<p>13</p>
+						<p>images</p>
+					</div>
+					
+				</div>
+			</section>
+
+			<section>
+
+				<!-- new post -->
+				<h2><i class="fa fa-plus-circle"></i>New Post</h2>
+				<form method="" action="">
+					
+					<input id="postTitle" type="text" name="postTitle" placeholder="Enter your post title" ><br>
+					<textarea id="postContent" placeholder="Enter your content here"></textarea><br>
+					<input type="submit" name="btnPublish" class="btn btn-grey" value="Publish">
+
+				</form>
+
+				<h2><i class="fa fa-cloud-upload"></i>Upload Image</h2>
+				<div class="img-set-holder">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200">
+					<img class="img-set" src="http://lorempixel.com/200/200"><br>
+					
+				</div>
+				
+
+				<form method="" action="">
+					
+					<!-- <input type="file" hidden=""> -->
+					<button class="btn btn-grey" type="button"><i class="fa fa-file-image-o"></i>Browse</button>
+					<button class="btn btn-grey" type="button"><i class="fa fa-cloud-upload"></i>Upload</button>
+				</form>
+
+
+				
+
+			</section>
+
+
+
+
+		</main>
+
+		<footer>
+			<span>PhotoFlare &copy 2017</span>
+		</footer>
+
+	</div>
+
+	<script src="https://use.fontawesome.com/acc6bc0537.js"></script>
+
+</body>
+</html>
