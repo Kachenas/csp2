@@ -1,0 +1,307 @@
+/* CSS Reset*/
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /*To avoid Overflow*/
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	background: url("../images/bg.jpg");
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	width:80%;
+	margin: 0 auto; /* To center the wrapper and put in in a container */
+	
+}
+
+div {
+
+	padding:20px;
+
+}
+
+.grandparent{
+	
+	width: inherit; /*refer to wrapper container's width*/
+	position: fixed;
+	bottom: 0;
+	/*left:50px;*/
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                          
+.parent{
+
+	width: 100%; /*refer to grandparents containers*/
+	position: relative;
+	
+}
+
+p{
+	position: static; /*default*/
+	margin-left: 50px;
+	margin-top: 20px;
+	font-family: 'Spectral SC', serif;
+ }
+
+ input[name="submit"] {
+ 	margin-left: 20px;
+ }
+
+ strong {
+ 	background-color: yellow;
+ 	/*position: relative;*/
+ 	/*top:100px;*/
+ 	/*left:100px;*/
+ 	position: absolute;
+ 	top: 10px;
+ 	left: 10px;
+ }
+
+ h1	{
+ 	padding: 10px;
+ 	position: fixed;
+ 	z-index: 1; /* will push element on top*/
+ 	width: inherit;
+
+ }
+
+ main.wrapper > p {
+ 	height: 1000px;
+ 	position: relative;
+ 	top: 70px;
+ }
+
+/*
+*
+*Page 3 CSS rules
+*
+*
+ */
+
+/*div{
+	width: 100px;
+	height: 100px;
+	border:1px solid #000;
+	position: absolute;
+}*/
+
+.blue{
+	background-color: blue;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+}
+
+.yellow{
+	background-color: yellow;
+	top: 40px;
+	left: 40px;
+	z-index: 0;
+}
+
+.orange{
+	background-color: orange;
+	top: 60px;
+	left: 60px;
+	z-index: 2;
+}
+
+/*
+*
+*
+*Page 4 CSS RULES
+*
+*/
+
+/*main.wrapper div {
+	padding:0;
+	margin:0;
+}*/
+
+.menu {
+	height: 100px;
+	background-color: #b2d6ff; /*blue*/ 
+}
+
+.sidebar {
+	height: 671px;
+	background-color: #f09a9d; /*red*/
+	width: 20%;
+	margin: 0 auto;
+	float: left; /*possible values right, none, left*/
+	font-size: 28px;
+
+	/*
+	*float left = left align
+	*float right = right align
+	**/
+}
+
+
+ul{
+	list-style-type: none;
+}
+
+
+.content {
+	/*height: 500px;*/
+	background-color: #f5c58e; /*yellow*/
+	width: 80%;
+	float: left;
+	padding:20px;
+
+}
+
+.article-image {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/*height: 200px;*/
+
+}
+
+div.content > p{
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: justify;
+}
+
+.footer {
+	/*height: 200px;*/
+	background-color: #d6e9fe; /*lightblue*/
+	clear: both; /*will offset floating effct */
+
+}
+
+/*.page {
+	border: 2px solid red;
+
+}*/
+
+/*
+*
+*
+*Best way to clear floats
+*
+*
+*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+/*
+*
+*
+*Column
+*
+*
+*/
+
+.column {
+	background-color: #b2d6ff;
+	height: 160px;
+	width: 31%;
+	margin: 20px 1.16%;
+	float: left; /*for testing only*/
+	padding:15px;
+	position: relative;
+
+
+}
+
+.avatar {
+	width: 60px;
+	height:60px;
+	background: url("../images/avatar.jpg");
+	float:left;
+	margin-right: 25px;
+	border-radius: 50%;
+	opacity: 1;
+	
+
+
+}
+
+.username {
+	margin-bottom: 15px;
+}
+
+h3.username + p {
+	overflow: hidden;
+}
+
+/**
+*
+*
+*Managing text-overflow with multiline suport.
+*
+*
+**/
+
+.block-with-text {
+	overflow:hidden;
+	position: relative;
+	line-height: 1.2em; /*default font size,16px*/
+	max-height: 3.6em;
+	text-align: left;
+	margin-right: -1em;
+	padding-right: 30px;
+}
+
+.block-with-text: before {
+	content: "...";
+	position: absolute;
+	right: 58px;
+	bottom: 0;
+}
+
+.block-with-text: after {
+	content: "";
+	position: absolute;
+	right: 58px;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background-color: #b2d6ff;
+}
+
+.read-more {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	right: 25px;
+	bottom: 25px;
+
+}
+
+
+a:link{
+	color: grey;
+	background-color: black;
+}
+
+a:visited{
+	color:yellow;
+	background-color: green;
+}*/
+
+
+a:focus{
+	background-color: black;
+	color: red;
+}
+
+a:hover{
+	background-color: blue;
+	color:orange;
+}
