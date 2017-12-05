@@ -1,0 +1,81 @@
+/* CSS Reset*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*
+*
+* To clear floats
+*
+*/
+
+.clear:after {
+	
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main {
+	background-color: red;
+	
+}
+
+/*wrapper*/
+
+.wrapper {
+	background-color: yellow;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+ul > li > a {
+	display: inline-block;
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 50px;
+}
+
+/*sidebar*/
+
+.sidebar {
+	background-color: red;
+	float:left;
+    width:340px
+}
+
+/*content*/
+.content {
+	background-color: green;
+	float:left;
+    width:620px;
+}
+
+ul {
+	text-decoration: none;
+}
+
+.blue {
+	background-color: blue;
+	height: 150px;
+}
+
+.red {
+	background-color: red;
+	height: 150px;
+}
+
+.green {
+	background-color: green;
+	height: 150px;
+}
+
+.yellow {
+	background-color: yellow;
+	height: 150px;
+}
