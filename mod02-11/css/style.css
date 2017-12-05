@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: orange;
+}
+
+sup {
+	width:80px; 
+	background-color: yellow; 
+	padding-right:20px; 
+	padding-top:10px;
+	border:1px solid;
+}
+
+ul {
+	width:80px; 
+	list-style-type: none;
+}
+
+li {
+	background-color: green;
+}
+
+dl {
+	width:80px;
+	background-color: red;  
+}
+
+input[type=email] {
+	width:80px;
+	background-color: yellow;
+}
+
+select {
+	width:80px;
+	background-color: green;
+	border-style: solid; 
+}
+
+footer {
+	width:50px;
+	background-color: brown;
+	border-style: solid; 
+}
+
+header {
+	height: 18px;
+	background-color: lavender;
+	border-style: solid; 
+
+}
+
+span {
+	height: 25px;
+	background-color: pink;
+	border-style: solid;
+}
+
+a {
+	height: 25px;
+	background-color: grey;
+}
+
+button {
+	height: 80px;
+	background-color: pink;
+}
+
+img {
+	height: 80px;
+	border-color: red;
+	background-color: yellow;
+	border:3px;
+
+}
+
+input[type=checkbox] {
+	height: 80px;
+	background-color: yellow;
+}
+
+sub{
+	height: 90px;
+	background-color: yellow;
+}
+
+fieldset {
+	height: 90px;
+	background-color: pink;
+}
+
+h5 {
+	width: 50px;
+	background-color: green;
+}
+
+q {
+	width: 25px;
+	background-color: lightgreen;
+	border-style: solid;
+}
+
+del {
+	color: blue;
+	background-color: pink;
+}
+
+aside {
+	width: 25px;
+	background-color: yellow;
+	border-style: solid;
+}
+
+figure {
+	width: 38px;
+	background-color: red;
+}
+
+input[type=submit] {
+	width: 80px;
+	background-color: green;
+}
+
+h3 {
+	width: 90px;
+	background-color: yellow;
+}
+
+small {
+	width: 60px;
+	background-color: grey;
+}
+
+hr {
+	padding:20px;
+	background-color: grey;
+}
+
+p{
+	padding:20px;
+	background-color: grey;
+}
+
+div {
+	padding:30px;
+	background-color: 
+}
+
+input[type=number] {
+	padding:80px;
+	background-color: green;
+}
+
+
+ul {
+	padding: 80px; 
+	list-style-type: none;
+	background-color: white;
+}
+
+dt {
+	margin: 15px;
+	background-color: red;
+}
+
+dd {
+	margin: 15px;
+	background-color: yellow;
+}
+
+input[type=radio] {
+	margin:80px;
+	background-color: green;
+}
+
+textarea {
+	margin:80px;
+	background-color: grey;
+}
+
+input[type=text] {
+	margin:35px;
+	background-color: green;
+}
+
+input[type=file] {
+	margin:40px;
+	background-color: yellow;
+}
+
+article {
+	margin:20px;
+	background-color: red;
+}
+
+figcaption {
+	margin:20px;
+	background-color: white;
+}
+
+label {
+	margin:20px;
+	background-color: green;
+}
