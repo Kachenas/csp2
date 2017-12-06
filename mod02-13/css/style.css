@@ -67,7 +67,7 @@ main.wrapper > p {
 }
 
 #home {
-	background-color: red;
+	background-color:#C3BAAA;
 	top: 20px;
 	left: 20px;
 	height: 400px;
@@ -165,14 +165,18 @@ main.wrapper > p {
 }
 
 .center-content {
-	width: 100%;
+	/*width: 100%;
 	background-color: #C3BAAA;
 	color: white;
 	font-family: 'Indie Flower', cursive;
 	height: 400px;
-	text-align: center;
-	/*transform: translate(-50%, -50%);
-*/
+	text-align: center;*/
+	/*transform: translate(-50%, -50%);*/
+	margin: auto;
+  width: 400px;
+  height: 200px;
+  background-color: #91818A;
+  border-radius: 3px;
 }
 
 /*
