@@ -1,81 +1,259 @@
-/* CSS Reset*/
-
+/* CSS Reset */
 * {
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* To avoid overflow */
+	font-family: 'Noto Serif', serif;
+
+}
+
+body {
+	background: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 1.5;
+}
+
+.wrapper {
+	width: 85%;
+	margin: 0 auto; /* To center the wrapper */
+	
+}
+
+
+.grandparent {
+	background-color: skyblue;
+	width: inherit;  /*Refer to wrapper container's width*/ 
+	position: fixed;
+	bottom: 0;
+}
+
+.parent {
+	background-color: pink;
+	/*width: 100%;  Refer to grandparent container's width */
+	position: relative;
+}
+	
+
+
+main.wrapper > p {
+	height: 1000px;
+	position: relative;
+	top: 70px;
 }
 
 /*
-*
-* To clear floats
-*
+ *
+ * Page 3 CSS Rules
+ *
+ */
+
+/*div {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000;
+	position: absolute;
+}*/
+
+.avatar1 {
+	width: 120px;
+	height: 120px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 15px;
+	border-radius: 50%;
+	background: url("../images/avat.jpg");
+}
+
+#home {
+	background-color: red;
+	top: 20px;
+	left: 20px;
+	height: 400px;
+}
+
+
+#about {
+	background-color: #EBDCCB;
+	top: 20px;
+	left: 20px;
+	height: 400px;
+}
+#service {
+	background-color: #C3BAAA;
+	top: 40px;
+	left: 40px;
+	height: 400px;
+	
+}
+#work {
+	background-color: #EBDCCB;
+	top: 60px;
+	left: 60px;
+	height: 400px;
+	
+}
+
+#project {
+	background-color: #C3BAAA;
+	top: 60px;
+	left: 60px;
+	height: 400px;
+	
+}
+
+#gallery {
+	background-color: #EBDCCB;
+	top: 60px;
+	left: 60px;
+	height: 400px;
+	
+}
+
+
+/*main.wrapper div {
+	padding: 0;
+	margin: 0;
+}*/
+
+.menu {
+	height: 100px;
+	
+}
+
+.sidebar {
+	padding: 40px;
+	margin-top: 2.5px;
+	margin-left: 2px;
+	height: 530px;
+	width: 15%;
+	float: left; /* Possible value: right, none, left */
+	font-family: 'Dosis', sans-serif;
+	/*height: 100%;*/
+}
+
+.sidebar > ul > li {
+	font-size: 0.8em;
+	line-height: 70px;
+	list-style-type: none;
+	
+
+}
+
+.sidebar > ul > li > a {
+	text-decoration: none;
+	padding: 10px 20px;
+	width: 100px;
+	margin-right: 20px;
+} 
+
+/*
+ *
+ * Content
+ *
+ */
+
+.content {
+	
+	width: 84%;
+	float: left;
+	padding: 20px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 24px;
+	opacity: 0.5;
+}
+
+.center-content {
+	width: 100%;
+	background-color: #C3BAAA;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	height: 400px;
+	text-align: center;
+	/*transform: translate(-50%, -50%);
 */
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+.footer {
+	/*height: 200px;*/
+	/*background-color: #d6e9fe;*/ /* Light Blue */
+	clear: both; /* Will offset floating effect */
+	/*border: 5px solid red;*/
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px;
+	border-radius: 50%;
+	background-image: url('http://lorempixel.com/60/60/');
+}
+
+
+
+/*
+ *
+ * Best-way to clear floats
+ *
+ */
 
 .clear:after {
-	
 	content: "";
 	display: block;
 	clear: both;
 }
 
-main {
-	background-color: red;
+/*
+ *
+ * Columns
+ *
+ */
+
+.column {
 	
+	height: 160px;
+	width: 98%;
+	margin: 20px 1.16%;
+	float: left;
+	padding: 15px;
+	/*overflow: hidden;*/
+	position: relative;
 }
 
-/*wrapper*/
+/*
+ *
+ * Managing text-overflow with multiline support
+ *
+ */
 
-.wrapper {
-	background-color: yellow;
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px;
-	
+.block-with-text {
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+	padding-right: 30px;
+	color: white;
+
 }
 
-ul > li > a {
-	display: inline-block;
-	text-align: center;
-	font-size: 0.8em;
-	line-height: 50px;
+a:link {
+	color: lightgrey;
 }
 
-/*sidebar*/
-
-.sidebar {
-	background-color: red;
-	float:left;
-    width:340px
+a:hover {
+	background-color: gray;
 }
 
-/*content*/
-.content {
-	background-color: green;
-	float:left;
-    width:620px;
-}
-
-ul {
-	text-decoration: none;
-}
-
-.blue {
-	background-color: blue;
-	height: 150px;
-}
-
-.red {
-	background-color: red;
-	height: 150px;
-}
-
-.green {
-	background-color: green;
-	height: 150px;
-}
-
-.yellow {
-	background-color: yellow;
-	height: 150px;
+div.back {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
 }
