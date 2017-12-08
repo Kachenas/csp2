@@ -1,0 +1,258 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* To avoid overflow */
+	font-family: 'Noto Serif', serif;
+
+}
+
+body {
+	background: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: 1.5;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto; /* To center the wrapper */
+	height:100%;
+
+	
+}
+
+
+/*
+ *
+ * Page 3 CSS Rules
+ *
+ */
+
+
+
+.avatar1 {
+	/*margin: 0 auto;*/
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+img {
+	height: 80%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.welcome {
+	padding: 20%;
+	text-align: center;
+	background-color: #C3BAAA;
+	margin: 0 auto;
+
+}
+
+#home {
+	padding: 20%;
+	text-align: center;
+	background-color: #C3BAAA;
+	margin: 0 auto;
+	background: url("../images/avat.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#about {
+	background-color: #EBDCCB;
+	padding: 3%;
+}
+#service {
+	background-color: #C3BAAA;
+	padding: 3%;
+}
+#work {
+	background-color: #EBDCCB;
+	padding: 3%;
+}
+
+#project {
+	background-color: #C3BAAA;
+	padding: 3%;	
+}
+
+#gallery {
+	background-color: #EBDCCB;
+	padding: 3%;
+}
+
+
+
+nav {
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-family: 'Dosis', sans-serif;
+	background-color: blue;
+}
+
+
+main > div.nav > ul > li {
+	padding: 3% 30% 3% 30%;
+	font-size: 0.8em;
+	/*line-height: 30px;*/
+	list-style-type: none;
+	color: blue;
+	text-align: center;
+
+
+
+}
+
+main > div.nav > ul > li > a {
+	text-decoration: none;
+	padding: 5% 40%;
+	width: 20%;
+	background-color: grey;
+} 
+
+/*
+ *
+ * Content
+ *
+ */
+
+.content {
+	
+	width: 100%;
+	/*float: right;*/
+	font-family: 'Dosis', sans-serif;
+	font-size: 24px;
+	opacity: 0.5;
+	top:100%;
+	position: relative;
+	padding: 0% 2% 0% 2%;
+	
+}
+
+.g-service {
+	border: 2px solid black;
+	padding: 1%;
+	float: left;
+}
+
+.g1-service {
+	border: 1px solid black;
+	
+}
+
+
+
+.a-service {
+	border: 2px solid black;
+	padding: 1%;
+	float: left;
+}
+
+.a1-service {
+	border: 1px solid black;
+	
+}
+
+.n-service {
+	border: 2px solid black;
+	padding: 1%;
+	float: left;
+}
+
+.n1-service {
+	border: 1px solid black;
+	
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px;
+	border-radius: 50%;
+	background-image: url('http://lorempixel.com/60/60/');
+}
+
+
+
+/*
+ *
+ * Best-way to clear floats
+ *
+ */
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+/*
+ *
+ * Managing text-overflow with multiline support
+ *
+ */
+
+.block-with-text {
+	overflow: hidden;
+	position: relative;
+	height: 100px;
+	padding-right: 30px;
+	color: white;
+
+}
+
+a:link {
+	color: lightgrey;
+}
+
+a:hover {
+	background-color: gray;
+}
+
+div.back {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+#toggleIcon, 
+#toggleIcon1 {
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left: 247px;
+	padding: 15px;
+	z-index: 1;
+	color: white;
+	font-size: 1em;
+
+}
+
+#toggleIcon1 {
+	left: 0;
+}
+
+p {
+	padding: 1%;
+}
