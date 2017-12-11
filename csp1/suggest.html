@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- usage of special character -->
+	<meta charset="utf-8">
+
+	<!-- This is a mobile application -->
+	<meta name="viewport" content="width=device-width", initial-scale="1.0", maximum-scale="1.0">
+
+	<!-- Use for INternet Exploer -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>Muzika Pinoy</title>
+
+	<!-- import google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC" rel="stylesheet">
+
+	<!-- import bootstrap -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- For CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+	
+
+	
+</head>
+
+<body>
+
+	
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Muzika Pinoy</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="schedule.html">GIG SCHEDULE</a></li>
+        <li class="active"><a href="suggest.html">SUGGEST BAND</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="log.html">LOG IN</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="col-xs-12">
+				<form action="#" method="post"> <!-- login form -->
+					<!-- user input -->
+					<label for="userName">Username</label>
+					<input type="text" name="userName" id="userName" placeholder="Enter username" required>
+
+					<!-- password input -->
+					<label for="passWord">Password</label>
+					<input type="password" name="passWord" id="passWord" placeholder="Enter your Password" required>
+
+					<label>Why should we feature your band to our site (wink) </label>
+					<textarea name="comments" placeholder=" Enter reason here"></textarea>
+
+					<input type="file" name="fileName">
+
+					<fieldset>
+						<legend>Contact Details</legend>
+						<label>Email</label>
+						<input type="email" name="email">
+						<label>Mobile</label>
+						<input type="number" name="number">
+					</fieldset>
+
+					<hr>
+
+					<input type="submit" name="submit" value="Send Now">
+
+
+				</form> <!-- login form -->
+
+			</div>
+		</div>
+	</div>
+	 
+
+	
+
+	<div class="container">
+			<footer class="row">
+				<div class="col-xs-12"></div>
+					<p class="text-center">Copyright &copy; 2017 by Chester Almonte</p>
+			</footer>
+		</div>
+
+</div> <!-- Container fluid -->
+
+
+	<!-- import jquery -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+
+	<!-- import bootstrap -->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
