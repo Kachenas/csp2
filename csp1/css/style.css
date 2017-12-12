@@ -17,9 +17,22 @@ h3 {
 
 
 
+.jumbotron {
+	font-family: 'Shadows Into Light', cursive;
+	background: url("../images/jumbo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.7;
+
+}
+
+div.jumbotron h1 {
+	text-align: center;
+	color:red;
+}
+
 
 body {
-
 	background: url("../images/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,16 +43,6 @@ body {
 .navbar-inverse,
 .well {
 	background-color: #210203;
-}
-
-.jumbotron {
-    background-image: url("images/kami1.jpg");
-    background-color: #17234E;
-    margin-bottom: 0;
-    min-height: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 
@@ -98,7 +101,116 @@ h3 > p > img {
 }
 
 .bg-form {
-	 border-radius: 5px;
-	background-color:#A9927D;
-	padding: 5px; 
+	background: url("../images/form.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
+	height: 70%;
+	padding: 5%;
 }
+
+.col-xs-4 col-md-4 col-lg-4 > panel panel-info > panel-heading {
+	background-color: #210203;
+}
+
+h4 {
+	text-align: center;
+	color: maroon;
+}
+
+a {
+	color: red;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+   
+}
+
+
+.bg-sched {
+	 /* The image used */
+    background-image: url("../images/ely.jpg");
+
+    /* Full height */
+    height: 300px;
+    left: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+}
+
+
+
+
+.center-gig {
+	padding: 25%;
+	text-align: center;
+}
+
+.container,
+.row,
+h3,
+p {
+	text-align: center;
+}
+
+/* zoom effect for image in gallery*/
+.img-container {
+	line-height: 50%;
+}
+
+.frame {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.zoomin img {
+  height: 70%;
+  width: 80%;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+.zoomin img:hover {
+  width: 90%;
+  height: 70%;
+  
+}
+
+.border {
+	line-height: 10px;
+	color: red
+	border: 1 solid red;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	color: green;
+	list-style-type: none;
+	display: inline-block;
+}
+
+.well {
+	padding: 5% 10% 5% 10%;
+	margin: 5%;
+	background: url("../images/form.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
+	height: 70%;
+	padding: 5%;
+}
+
