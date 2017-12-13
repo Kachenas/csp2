@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<!-- usage of special character -->
@@ -14,7 +14,7 @@
 	<title>Muzika Pinoy</title>
 
 	<!-- import google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|Dancing+Script|Indie+Flower|Playfair+Display|Shadows+Into+Light" rel="stylesheet">
 
 	<!-- import bootstrap -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -23,17 +23,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	
-	
-
-	
 </head>
 
 <body>
 
-	
-
-	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -57,62 +51,115 @@
         <li><a href="log.html">LOG IN</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
 
 <div class="container">
-			<div class="row">
-					<div class="col-xs-12">
-						<div class="jumbotron">
-						    <h1><a href="#">Got what it takes? Suggest your Band Now!</a></h1> 
-					 	 </div>
-					</div>
-			</div>  
-		</div>
-
-	<div class="container-fluid">
-		<div class="container">
-			<div class="col-xs-12 col-md-6 col-lg-6">
-
-				<div class="bg-form">
-					
-					<form action="#" method="post"> <!-- login form -->
-					<!-- user input -->
-					<label for="userName">Enter your Band name</label>
-					<input type="text" name="userName" id="userName" placeholder="Enter Band name here" required>
-					<br>
-					<label>Why should we feature your band to our site (wink) </label>
-					<textarea name="comments" placeholder=" Enter reason here"></textarea>
-
-					<input type="file" name="fileName">
-
-					<fieldset>
-						<legend>Contact Details</legend>
-						<label>Email</label>
-						<input type="email" name="email">
-						<label>Mobile</label>
-						<input type="number" name="number">
-					</fieldset>
-
-
-					<input type="submit" name="submit" value="Send Now">
-
-
-				</form> <!-- login form -->
-				</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="jumbotron">
+				<h1><a href="#">Got what it takes? Suggest your Band Now!</a></h1> 
 			</div>
 		</div>
+	</div>  
+</div>
+		<div class="container">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+               <div class="rule">
+               		<h2>Rules:</h2>
+                     <ol>
+                     	<li>Name of your band must be unique</li>
+                     	<li>You must upload own composition of your song</li>
+                     	<li>The video must be 3 to 5 minutes long.</li>
+                     	<li>No sexual, harmful content contain in the video.</li>
+                     	<li>You must upload own composition of your song</li>
+                     	<li>No required GENRE! Any type of song are welcome!</li>
+                     </ol>
+               	</div>   
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+               <div class="well">
+                  <form>
+					  <div class="form-group">
+					    <label for="bandName">Enter Band Name</label>
+					    <input type="text" class="form-control" id="bandName" placeholder="Band Name here">
+					  </div>
+					  <div class="form-group">
+					    <label for="bandAbout">About your Band</label>
+					    <textarea class="form-control" rows="10" placeholder="Enter information about your band"></textarea>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputFile">Enter video</label>
+					    <input type="file" id="exampleInputFile">
+					  </div>
+					  <button type="submit" class="btn btn-default">SEND</button>
+				</form>
+               </div>
+            </div>
+		</div>
+
+<div class="container">
+	<div class="col-xs-12 col-md-6 col-lg-6">
+		<h3>Leave a Comment</h3>
+			<p>Please, avoid bad words and respect the band performance. </p>
+				<div class="well">
+					<form>
+						<div class="form-group">
+							<label for="contactName">Name</label>
+							<input class="form-control" type="text" name="contactName" id="contactName" placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<label for="contactEmail">Email</label>
+							<input class="form-control" type="email" name="contactEmail" id="contactEmail" placeholder="example@domain.com">
+						</div>
+						<div class="form-group">
+							<label class="form-control" for="contactComment">Comment</label>
+							<textarea class="form-control" name="contactComment" id="contactComment"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary form-control">Submit</button>
+					</form>
+				</div>
 	</div>
-	 
+</div>
 
-	
-
-	<div class="container">
+<div class="container">
 			<footer class="row">
 				<div class="col-xs-12"></div>
-					<p class="text-center">Copyright &copy; 2017 by Chester Almonte</p>
+				<div class="container">
+				<div class="row">
+						<div class="col-xs-12 col-md-6 col-lg-4">
+							<h4>Pages</h4>
+								<div class="panel-body">
+									<div class="link-footer">
+										<ul>
+										<li><a href="home.html">Home</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="schedule.html">Gig Schedule</a></li>
+										<li><a href="suggest.html">Suggest</a></li>
+									</ul>
+									</div>
+								</div>
+					 	 </div>
+					 	<div class="col-xs-12 col-md-6 col-lg-4">
+							<h4>Follow us on</h4>
+								<div class="panel-body">
+									<div class="link-footer">
+										<ul>
+										<li><a href="https://www.facebook.com/">Facebook</a></li>
+										<li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+										<li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+										<li><a href="https://www.pinterest.com/">Pinterest</a></li>
+									</ul>
+									</div>
+								</div>
+					 	 </div>
+					 <div class="copy-right">
+					 	<p>Copyright &copy; 2017 by Chester Almonte</p>
+						<p>Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some assets use are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</p>
+					 </div>
+					
 			</footer>
-		</div>
+	</div>
+
 
 </div> <!-- Container fluid -->
 
