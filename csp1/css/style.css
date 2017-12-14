@@ -6,16 +6,23 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 /*default styling p,li,ul,ol,h1,h2,h3,h4*/
 
 p {
 	font-family: 'Crimson Text', serif;
 	color: white;
-	font-size: 1em;
+	font-size: 1.1em;
+	letter-spacing: 1px;
 }
 
 h1{
-	font-size: 3em;
 	font-weight: normal;
 	margin-bottom: 0;
 	font-family: 'Indie Flower', cursive;
@@ -51,7 +58,7 @@ ul {
 li {
 	list-style-type: none;
 	font-family: 'Dancing Script', cursive;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	color: #9D858D;
 	font-weight: bold;
 }
@@ -60,14 +67,14 @@ a {
 	color: red;
 }
 
-/* For Home - Gallery*/
+/* For Home - effect for gallery image */
 div.gallery-img a {
 	font-family: 'Amatic SC', cursive;
 	font-size: 1.3em;
 	color: white;
 }
 
-/* For Home - gig*/
+/* For Home - effect for gig schedule*/
 div.gig-body > h2 {
 	font-family: 'Shadows Into Light', cursive;
 	color: #F26419;
@@ -75,9 +82,15 @@ div.gig-body > h2 {
 	font-weight: bold;
 }
 
+
+/*Footer Decoration for link*/
+
 div.link-footer > ul > li > a {
 	color: green;
+	font-size: 1.5em;
 }
+
+/*Serve as separator between content*/
 
 .jumbotron {
 	font-family: 'Shadows Into Light', cursive;
@@ -85,21 +98,12 @@ div.link-footer > ul > li > a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.7;
-	height:auto;
-	padding: 5%;
+	padding: 0.3em 0.4em;
 }
 
 div.jumbotron h1 {
 	text-align: center;
 	color:red;
-}
-
-
-body {
-	background: url("../images/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 .navbar-collapse,
@@ -108,35 +112,9 @@ body {
 	background-color: #210203;
 	margin: 0;
 	letter-spacing: 2px;
+	font-size: 0.9em;
 }
 
-
-.bio{
-	color:white;
-}
-
-
-.me{
-	height: 200px;
-	border-radius: 50%;
-	border-style: solid;
-	border-color: white;
-	opacity:0.8;
-
-}
-
-
-.wrapper {
-	/*width: 50%;*/
-	margin:0 auto; 
-
-	text-align: center; /* center the text*/
-	position: absolute;
-	top: 50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-
-}
 
 img {
 	width: 100%;
@@ -160,12 +138,13 @@ h3 > p > img {
 .bg-sched {
     background-image: url("../images/ely.jpg");
     height: 300px;
-    left: 250px; 
+    /*left: 250px;*/ 
     /*parrallax scrolling effect*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    width: 100%;
 
 
 }
@@ -190,16 +169,15 @@ p {
 
 }
 .zoomin img {
-  height: 80%;
-  width: 80%;
+  height: 75%;
+  width: 73%;
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
       -ms-transition: all 1s ease;
           transition: all 1s ease;
 }
 .zoomin img:hover {
-  width: 100%;
-  height: 100%;
+  transform: scale(1.2);
 }
 
 .border {
@@ -233,14 +211,23 @@ h2 > ol > li {
 	height: 80%;
 }
 
+.rule li {
+	font-size: 1.5em;
+	color: white;
+	letter-spacing: 2px;
+	font-family: 'Crimson Text', serif;
+}
+
 form {
 	padding: 2%;
     width: 100%;
     height: 80%;
     background-color: #210203;
     opacity:0.8;
+}
 
-
+form > form-horizontal {
+	padding: 1%;
 }
 
 label {
@@ -248,13 +235,9 @@ label {
 	color: green;
 }
 
-audio {
-	width: 80%;
-}
-
 
 .log-in {
-	width: 80%;
+	width: 100%;
 	padding: 3%;
 }
 
@@ -263,12 +246,177 @@ audio {
 	font-size: 1em;
 }
 
-/*footer {
-   position:absolute;
-   bottom:0;
-   width:90%;
-   height:1px;   
-   background:none;
 
-}*/
+
+.fond{
+	padding-top:5%;
+	top:0;left:0; 
+	right:0;
+	bottom:0;
+}
+
+
+
+/*index*/
+
+
+.bio{
+	font-size: 14px;
+	
+
+}
+
+.me{
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+	opacity:0.8;
+}
+
+
+.wrapper {
+	width: 100%;
+	/*margin:0 auto; to center*/
+
+	text-align: center; /* center the text*/
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	padding: -50%;
+}
+
+.wrapper img a:hover {
+	 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.term {
+	padding: 10%;
+	color: white;
+	font-size: 1.5em;
+}
+
+/* slideshow gallery*/
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Remove bottom margin. Needed for some browsers */
+img {
+  margin-bottom: -4px;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+iframe {
+	width: 250px;
+	height: 250px;
+}
+
+
+/* Effect in Index*/
+
+p:nth-child(1) a {
+  color: #fff;
+  font-family: Monoton;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  font-size: 4.5em;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  		}
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  	}
+}
+
+
+
 
