@@ -1,0 +1,84 @@
+/* css reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #D4C5E2;
+}
+
+.mainwrapper {
+	padding: 2%;
+	margin-bottom: 2%;
+}
+
+.wrapper {
+	width: 60%;
+	/*height: 40%;*/
+	text-align: center;
+	margin: 0 auto;
+	background-color: #A7E2E3;
+	top: 25%;
+	/*left: 45%;*/
+	/*position: absolute;*/
+	/*transform: translate(-45%,45%);*/
+	border: 1px solid black;
+	padding: 3%;
+}
+
+.wrapper2 {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #A7E2E3;
+	top: 55%;
+	border: 1px solid black;
+	padding: 3%;
+}
+
+.wrapper3 {
+	width: 60%;
+	color: red;
+	text-align: center;
+	margin: 0 auto;
+	top: 55%;
+	padding: 3%;
+}
+
+
+
+#header1 {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 34px;
+	color: #7067CF;
+	margin-top: 3%;
+}
+
+.stylingProperty .button {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.stylingProperty1  {
+     text-align: center;
+     margin: 0 auto;
+     padding: 3%;
+     margin-top: 2%;
+     width: 20%;
+}
+
+.stylingProperty2  {
+     text-align: center;
+     margin: 0 auto;
+     padding: 3%;
+     margin-top: 2%;
+}
+
+
+
+

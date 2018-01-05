@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+
+	<!-- import jquery -->
+     <script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- For CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div id="header1">Welcome and feel free to Animate</div>
+
+	<div class="stylingProperty1">
+		<button id="sText">Size of Text</button><input type="text" id="inputS" placeholder="eg:150%"><br>
+		<button id="bcolor">Change Text Color</button><input type="text" id="changetheColor" placeholder="eg:red"><br>
+		<button id="bg1color">Change BG color</button><input type="text" id="changethebg1Color" placeholder="eg:blue"><br>
+		<button id="btn">Hide/Show</button><br>
+	</div>
+
+
+	
+
+		<div class="wrapper">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="stylingProperty2">
+			<button class="changeCharacter">Super Hero 1</button>
+			<button class="changeCharacter">Super Hero 2</button>
+			<button class="changeCharacter">Super Hero 3</button><br>
+			<button id="filter1">Opacity</button>
+			<button id="filter2" >Zoom Out</button>
+			<button id="filter3" >Zoom In</button>
+			<button id="filter4" >Invisible</button>
+		</div>
+
+		<div class="wrapper2">
+		<img id="characterImg" src="images/suicide.jpg" height="220px" width="280px"><br>
+		</div>
+
+		<div class="wrapper3">
+			<h1>Enter your Name</h1><br>
+			<input type="text" id="name">
+			<h2 id="inputName"></h2>
+		</div>
+		
+
+	<script type="text/javascript">
+
+
+		//for Hide and Show
+		$('#btn').click(function(){
+			$('p').toggle();
+		})
+
+		//change the p color
+		$('#bcolor').click(function(){
+			var input4 = $("#changetheColor").val();
+			$("p").css('color',input4);
+			$("input4").val("");
+		})
+
+		//change the height
+		$('#sText').click(function(){
+			var input3 = $("#inputS").val();
+			$("p").css('font-size',input3);
+			$("inputS").val("");
+		})
+
+		//change the bg color
+		$('#bg1color').click(function(){
+			var input2 = $("#changethebg1Color").val();
+			$(".wrapper").css('background-color',input2);
+			$("changethebg1Color").val("");
+		})
+
+		//superhero
+		$(".changeCharacter").click(function(){
+			var src = " ";
+
+			switch($(this).html()){
+				case "Super Hero 1":
+				src = "images/batman.jpg";
+				break;
+				case "Super Hero 2":
+				src = "images/spiderman.jpg";
+				break;
+				case "Super Hero 3":
+				src = "images/wonderwoman.jpg";
+				break;
+			}
+			$("#characterImg").attr('src',src);
+		})
+
+		//filter effects
+	    $("#filter1").click(function(){
+	        $("#characterImg").animate({ 
+	            opacity: '0.5',
+	        });
+	    });
+
+	    $("#filter2").click(function(){
+	    	$("#characterImg").animate({
+	    		height: '280px',
+	    		width: '320px'
+	    		
+	    	});
+	    })
+
+	    $("#filter3").click(function(){
+	    	$("#characterImg").animate({
+	    		height: '220px',
+	    		width: '280px'
+	    		
+	    	});
+	    })
+
+	    $("#filter4").click(function(){
+	    	$("#characterImg").animate({
+	    		opacity: ''
+	    	});
+	    })
+
+		
+		
+
+
+	</script>
+
+	
+
+</body>
+</html>
+

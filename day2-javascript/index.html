@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sample JS Day2</title>
+</head>
+<body>
+	<h1>Sample JS Day 2</h1>
+
+	<p>Enter a number in the input box, and evaluate if the number is a multiple of 3 and 5.
+	if not, check if it's a multiple of 3 or a multiple of 5</p>
+
+	<input type="text" id="input1">
+	<button id="btn" onclick="output(this.innerHTML)">Click Me!</button>
+
+	<script type="text/javascript">
+
+
+		function output(input1) 
+		{
+
+		var x = parseInt(document.getElementById('input1').value);
+
+		if (x % 3 == 0 && x % 5 == 0) {
+			if (x%2 == 0) {
+				document.getElementById('input1').value = x + ' is divisible by 3 and 5 and is Even';
+			}else {
+				document.getElementById('input1').value = x + ' is divisible by 3 and 5 and is ODD';
+			}
+						
+		}/*first line*/
+		else if (x % 3 == 0) {
+			if (x%2 == 0) {
+				document.getElementById('input1').value = x + ' is divisible by 3 and is even';
+			}else {
+				document.getElementById('input1').value = x + ' is divisible by 3 and is ODD';
+			}
+		}/*second line*/
+		else if (x % 5 == 0) {
+			if (x%2 == 0) {
+				document.getElementById('input1').value = x + ' is divisible by 5 and is even';
+			}else {
+				document.getElementById('input1').value = x + ' is divisible by 5 and is ODD';
+			}
+			
+		}
+		else {
+			if (x%2 == 0) {
+				document.getElementById('input1').value = x + ' is not divisible by 3 and 5 and is even';
+			}else {
+				document.getElementById('input1').value = x + ' is not divisible by 3 and 5 and is odd';
+			}	
+			}
+		
+		}
+
+	</script>
+
+
+	
+</body>
+</html>
+
+
+
+
+

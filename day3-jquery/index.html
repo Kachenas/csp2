@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+
+	<!-- import jquery -->
+     <script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- For CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<h1 id="heading">Day3 Jquery</h1>
+
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button id="btn">Click</button>
+
+	<button id="hdebuton">Hide</button>
+	<button id="shwbuton">Show</button> <br>
+
+	<input type="text" id="input1">
+	<button id="changeHeading">Append</button><br>
+
+	<img src="images/img1.jpg" height="250px" width="200px" id="image1">
+	<button id="changeImage">Change Image</button><br>
+	<img id="characterImg" src="images/suicide.jpg" height="250px" width="200px"><br>
+	<button class="changeCharacter">Batman</button>
+	<button class="changeCharacter">Spiderman</button>
+	<button class="changeCharacter">Wonderwoman</button><br>
+	<button class="changeHeight">100px</button>
+	<button class="changeHeight">450px</button>
+	<button class="changeHeight">800px</button>
+	<br>
+	<h1 id="changeHeadingColor">Change the color when click</h1>
+	<button class="changeColor">Red</button>
+	<button class="changeColor">Green</button>
+	<button class="changeColor">Blue</button><br>
+
+	<h1 id="changeColorUsingInput">Change Color using Input</h1>
+	<input type="text" id="input4">
+	<button id="changetheColor">Change Color</button><br>
+
+	<script type="text/javascript">
+		//document.getElementByID :: $
+		/*$('#p1').hide();*/
+		//.style.display = "none" :: .hide()
+		/*document.getElementById("heading").style.display = "none";*/
+
+		/*document.getElementById("heading").innerHTML = "jqeury";*/
+		//$('#heading').html("jquery")
+
+		/*document.getElementById('btn').onclick = function() {
+			alert("Hello");
+		} DOM element below is the equivalent*/
+
+
+		//using cases
+	/*	$(".changeColor").click(function(){
+			var color = " ";
+
+			switch($(this).html()){
+				case "Red":
+				color = "red";
+				break;
+				case "Green":
+				color = "green";
+				break;
+				case "Blue":
+				color = "blue";
+				break;
+			}
+			$("#changeHeadingColor").css('color',color);
+		})*/
+
+		//change the background color
+		$(".changeColor").click(function(){
+			$("#characterImg").parent().css('background-color',$(this).html())
+		})
+
+		$('#btn').click(function(){
+			$('p').toggle();
+		})
+
+
+		$('#hdebuton').click(function(){
+			$('p').hide();
+		})
+
+		$('#shwbuton').click(function(){
+			$('p').show();
+		})
+
+		$('')
+
+
+		/*getting input top change the value of the html*/
+		/*$('#changeHeading').click(function(){
+			var input1 = $("#input1").val()
+			$("#heading").html(input1) 
+		})*/
+		// or $("#heading").html($("#input1").val())
+
+		//changecolor
+		$('#changetheColor').click(function(){
+			var input4 = $("#input4").val();
+			$("#changeColorUsingInput").css('color',input4);
+			$("input4").val("");
+		})
+
+		// to append
+		$('#changeHeading').click(function(){
+			$("#heading").html($("#heading").html() + $("#input1").val());
+		}) // or use the append
+
+		/*$('#changeImage').click(function(){
+			$('#image1').attr('src','images/img2.jpg');
+		})*/
+
+		//toggleImage
+		$('#changeImage').click(function(){
+			if($("#image1").attr('src') == "images/img1.jpg"){
+				$("#image1").attr('src', "images/img2.jpg")
+			} else{
+				$("#image1").attr('src', "images/img1.jpg")
+			}
+
+
+		})
+
+		$(".changeCharacter").click(function(){
+			var src = " ";
+
+			switch($(this).html()){
+				case "Batman":
+				src = "images/batman.jpg";
+				break;
+				case "Spiderman":
+				src = "images/spiderman.jpg";
+				break;
+				case "Wonderwoman":
+				src = "images/wonderwoman.jpg";
+				break;
+			}
+			$("#characterImg").attr('src',src);
+		})
+
+		$(".changeHeight").click(function(){
+			var height = " ";
+
+			switch($(this).html()){
+				case "100px":
+				height = "100px";
+				break;
+				case "450px":
+				height = "450px";
+				break;
+				case "800px":
+				height = "800px";
+				break;
+			}
+			$("#characterImg").attr('height',height);
+		})
+
+		//to change multiple values $("image").css({attribute:value,attribute:value,...})
+
+
+
+
+		
+	</script>
+	
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI Computation</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+			<h1>Compute for the BMI</h1>
+
+			<label for="Weight">Enter Weight</label><input type="text" id="weight" name="weight">
+			<select>
+				<option id="kilogram" onchange="kilogram(this.innerHTML)">Kilogram</option>
+				<option id="pound" onchange="pound(this.innerHTML)">Pound</option>
+			</select><br>
+			<label for="height">Enter Height</label><input type="text" id="height" name="height">
+			<select>
+				<option id="inch" onchange="inch(this.innerHTML)">Inch</option>
+				<option id="meter" onchange="meter(this.innerHTML)">Meter</option>
+			</select><br>
+			<button id="btn" onclick="output(this.innerHTML)">Compute for BMI</button><br>
+			<label for="weightClassfication">Weight Classification</label><input type="text" id="input1">
+
+			<h2 id="sample"></h2><br>
+
+			<input type="text" id="input5"><button id="input5Btn" onclick="displayAr()">Click Me</button>
+
+			<script type="text/javascript">
+				function output() 
+				{
+					
+					var weight = parseInt(document.getElementById('weight').value);
+					var height = parseInt(document.getElementById('height').value);
+					var pound =  parseInt(document.getElementById('pound').value);
+					var inches =  parseInt(document.getElementById('inch').value);
+
+					
+
+						if ( y == pound ) {
+							y = y * 0.453592;
+						}
+
+						if ( x == inch ) {
+							x = x * 0.0254;
+						}
+
+						var z = y / ( x * x);
+
+						if (z < 18) {
+							document.getElementById('input1').value = 'Your BMI is ' + z + ' Under weight ';
+						}else if ( z >= 18.1 && z <= 24.9) {
+							document.getElementById('input1').value = 'Your BMI is ' + z + ' Normal Weight ';
+						}else if ( z >= 25.0 && z <= 29.9) {
+							document.getElementById('input1').value = 'Your BMI is ' + z + ' Over Weight ';
+						}else if ( z >= 30.0 && z <= 34.9) {
+							document.getElementById('input1').value = 'Your BMI is ' + z + ' Obese ';
+						}
+				}
+
+				
+				/*var x = 0; 
+				var odd=0;
+				var even=0;
+				var sum=0;
+
+				while (x <= 50) {
+						if (x%2 == 0) 
+						{
+							even = even + x;
+							
+						}else {
+							odd = odd + x;
+							
+						}
+
+						x++;
+				} 
+
+				alert('The sum of even is ' + even + '\n' + 'The sum of odd is ' + odd);*/
+
+
+						/*sum = sum + x;
+						console.log(sum)
+						if (sum == 55) {
+							alert(sum);
+						}
+						x++; */
+
+						/*sum+=x
+						x++;*/
+
+				var colors = [
+					"red",
+					"orange",
+					"yellow",
+					"green",
+					"violet",
+					"indigo",
+					"blue"];
+
+					/*console.log(colors[0]+", "+colors[1]+", "+colors[2]+", "+colors[3]+", "+colors[4]+", "+colors[5]+", "+colors[6]+", ")*/
+
+
+					/*var x = colors.length - 1;
+
+					while (x >= 0){
+						console.log(colors[x]);
+						x--;
+					}*/
+					/*console.log(colors[0]);
+					console.log(colors[1]);
+					console.log(colors[2]);
+					console.log(colors[3]);
+					console.log(colors[4]);
+					console.log(colors[5]);
+					console.log(colors[6]);
+					*/
+				/*for (var x = colors.length - 1; x >= 0; x--) {
+					console.log(colors[x]);
+				}*/
+
+				/*function displayAr() {
+					var a = parseInt(document.getElementById('input5').value);
+					for (var x = 0; x < a; x++) 
+					{
+					document.getElementById('sample').innerHTML += "  <br>";
+					for (var y = 0; y < a; y++) 
+					{
+					document.getElementById('sample').innerHTML += " *";
+					}
+					}
+
+				}*/
+
+				function displayAr() {
+					var a = parseInt(document.getElementById('input5').value);
+					for (var x = 0; x < a; x++) 
+					{
+					for (var y = 0; y < a; y++) 
+					{
+					document.getElementById('sample').innerHTML += " *";
+					}
+					document.getElementById('sample').innerHTML += "  <br>";
+					}
+
+				}
+
+
+
+				/*for (var x = 0; x < 5; x++) 
+				{
+					document.getElementById('sample').innerHTML += "  <br>";
+					for (var y = 0; y < 5; y++) 
+					{
+					document.getElementById('sample').innerHTML += " *";
+					}
+				}*/
+
+
+
+
+			</script>
+
+
+
+	</div>
+
+</body>
+</html>
