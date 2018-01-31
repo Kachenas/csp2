@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #02040F;
+}
+
+/*
+Style for Navigation
+*/
+.navbar {
+	min-height: 78px;
+	background-color: rgba(255,255,255,0);
+	border: none;
+
+}
+
+.navbar-brand {
+	left: 5%;
+}
+
+.order-shop {
+	padding: 2%;
+	background-color: white;
+	opacity: 0.5;
+}
+
+.jumbotron {
+	background: url("../images/bg-jumbo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	padding: 0;
+	opacity: 0.9;
+}
+
+.page-header {
+	border-bottom: 1px solid #ED7D3A;
+	text-align: center;
+	margin-top: 0;
+
+}
+
+.jumbotron-newsletter {
+	border: none;
+}
+
+.navbar-brand {
+	margin-left: 15%;
+}
+
+.navbar-brand > a {
+	color: black;
+}
+
+.img-responsive-icon {
+	height: 65%;
+	position: absolute;
+	left: 11%;
+	top: 3%;
+}
+
+/*#myCarousel {
+	width: 35%;
+}*/
+
+
+.for-carousel-slide{
+	margin: 0 auto;
+	width: 40%;
+	height: 40%;
+}
+
+
+ul {
+	list-style-type: none;
+
+}
+
+li > a {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	color: black;
+}
+
+/*Menu Cart*/
+.menu-cart {
+	border: none;
+	margin: 0 auto;
+}
+
