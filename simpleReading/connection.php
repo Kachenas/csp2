@@ -14,7 +14,6 @@ else {
 	mysqli_set_charset($conn,'utf8');
 }
 
-$sql = "SELECT * FROM books";
-$result = mysqli_query($conn,$sql);
+
 
 ?>

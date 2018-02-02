@@ -2,27 +2,59 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #02040F;
+	font-family: 'Crimson Text', serif;
 }
+
+body {
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
 
 /*
 Style for Navigation
 */
 .navbar {
-	min-height: 78px;
-	background-color: rgba(255,255,255,0);
+	min-height: 50px;
+	/*background-color: rgba(255,255,255,0);*/
+	background-color: #F9C80E;
 	border: none;
+	opacity: 0.6;
 
+}
+
+.navbar-nav > li > a {
+	font-size: 1.4em;
+	color: yellow;
 }
 
 .navbar-brand {
-	left: 5%;
+	font-size: 1.5em;
+	color: white;
+}
+
+.dropdown-menu {
+	background-color: #F9C80E;
 }
 
 .order-shop {
+	margin-top: 3%; 
 	padding: 2%;
 	background-color: white;
 	opacity: 0.5;
+	
+}
+
+.quoteblack {
+	color: black;
+}
+
+#blockText {
+	font-family: 'Poiret One', cursive;
+	font-size: 1em;
 }
 
 .jumbotron {
@@ -39,31 +71,28 @@ Style for Navigation
 	border-bottom: 1px solid #ED7D3A;
 	text-align: center;
 	margin-top: 0;
+	font-family: 'Vidaloka', serif;
+	color: #F18F01;
 
+}
+
+.menu-styling {
+	font-family: monospace;
+	font-family: 'Crimson Text', serif;
+	font-size: 1em;
+	color: green;
+	
+
+}
+
+.menu-index-styling {
+	border-bottom: 1px green;
+	padding: 2%;
 }
 
 .jumbotron-newsletter {
 	border: none;
 }
-
-.navbar-brand {
-	margin-left: 15%;
-}
-
-.navbar-brand > a {
-	color: black;
-}
-
-.img-responsive-icon {
-	height: 65%;
-	position: absolute;
-	left: 11%;
-	top: 3%;
-}
-
-/*#myCarousel {
-	width: 35%;
-}*/
 
 
 .for-carousel-slide{
@@ -72,21 +101,41 @@ Style for Navigation
 	height: 40%;
 }
 
-
-ul {
-	list-style-type: none;
-
+#content-area {
+	min-height: 90vh;
 }
 
-li > a {
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 18px;
-	color: black;
-}
 
 /*Menu Cart*/
 .menu-cart {
-	border: none;
-	margin: 0 auto;
+	border: 1px solid #02040F;
+	background-color: green;
 }
 
+/*For Footer*/
+#forFooter {
+	text-align: center;
+}
+
+
+
+/*
+Admin page customization
+
+*/
+.edit-for-author-button {
+	padding: 3%;
+}
+
+.edit-for-items-button {
+	padding: 3%;
+}
+
+.well-admin-head {
+	padding: 2%;
+}
+
+/*login error*/
+.form-group  #wrong-login {
+	color: red;
+}
