@@ -1,6 +1,0 @@
-ID,Name,Price,Quantity,Availability,Description,Category
-1,Shoe1,300,5,InStock,Black,Leather
-2,Shoe2,450,5,InStock,Red,Indoor
-3,Shoe3,280,5,InStock,Green,Outdoor
-4,Shoe4,600,5,InStock,Yellow,Leather
-5,Shoe5,450,5,InStock,Green,Leather
